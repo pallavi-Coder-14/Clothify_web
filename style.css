@@ -1,0 +1,293 @@
+/* ================= GLOBAL ================= */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* ================= HEADINGS ================= */
+h1, h2 {
+  color: #f10a57;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(240, 241, 123, 0.15);
+}
+
+h3 {
+  color: #8d1804;
+}
+h4{
+  color:#f10a57
+}
+.brand-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #137fc7;
+  max-width: 400px;
+  margin: 5% ;
+  padding: 5% ;
+  background: linear-gradient(135deg, #fff5f7, #fefefe);
+  animation: shake 2s infinite;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 5px rgba(38, 77, 161, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.brand-text:hover {
+  transform: translateY(-5px);
+  transition: 0.4s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.brand-text1 {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a046b;
+  max-width: 400px;
+  margin: 5% ;
+  padding: 5% ;
+  background: linear-gradient(135deg, #fff5f7, #fefefe);
+ 
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 5px rgba(38, 77, 161, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-5px);
+  transition: 0.4s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* ================= NAVBAR ================= */
+.navbar {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ================= CARDS ================= */
+.card {
+  border: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* ================= CARD IMAGE EFFECT ================= */
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff5722;
+  border-color: #ff5722;
+  box-shadow: 0 0 15px rgba(255,87,34,0.6);
+  transform: scale(1.05);
+}
+
+/* ================= ICON / IMAGE BOUNCE ================= */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+img:hover {
+  animation: bounce 0.6s;
+}
+
+/* ================= CAROUSEL ================= */
+.carousel {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ================= INFORMATION TEXT ================= */
+.text-primary {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ================= FEATURE CARD ================= */
+.card-header {
+  background: linear-gradient(45deg, #612c1f, #ff9800);
+  color: white;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: #f1f1f1;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ================= TABLE TOP BANNER ================= */
+table img {
+  max-height: 200px;
+  transition: transform 0.4s ease;
+}
+
+table img:hover {
+  transform: scale(1.1);
+}
+
+
+/* ===== BRAND NAME FLEX + SHAKE ===== */
+.brand-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f30e9b;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  animation: shake 2s infinite;
+  white-space: nowrap;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 1.6rem;
+  }
+}
+/* ================= INFORMATION SECTION ================= */
+
+.container.my-5 {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+.container.my-5 h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ff5722;
+  position: relative;
+}
+
+/* underline effect */
+.container.my-5 h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff9800;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Paragraph text */
+.container.my-5 p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Highlighted about text */
+.container.my-5 .text-primary {
+  font-weight: 500;
+}
+
+/* Offer list styling */
+.container.my-5 center {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #333;
+}
+
+/* Hover effect for whole box */
+.container.my-5:hover {
+  transform: translateY(-5px);
+  transition: 0.4s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container.my-5 {
+    padding: 25px 20px;
+  }
+
+  .container.my-5 h2 {
+    font-size: 1.5rem;
+  }
+
+  .container.my-5 p,
+  .container.my-5 center {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+.brand-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #ff5722;
+  text-shadow: 
+    0 0 5px #ff9800,
+    0 0 15px rgba(255, 152, 0, 0.6);
+  animation: brandShake 3s infinite ease-in-out;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
+/* Shake animation */
+@keyframes brandShake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
